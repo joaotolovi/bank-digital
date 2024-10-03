@@ -34,12 +34,9 @@ function App() {
   };
 
 
-  // Evita o comportamento padrão do formulário pra não mudar de pagina
+  // Evita o comportamento padrão do formulário 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); 
-    if (aceitaTermos) {
-      console.log({ nome, telefone, email, senha });
-    }
   };
 
 
